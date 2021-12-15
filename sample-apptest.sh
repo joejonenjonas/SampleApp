@@ -1,3 +1,4 @@
+pwd
 if curl http://localhost:8989 | grep gateway
 then 
   exit 0
