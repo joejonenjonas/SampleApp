@@ -9,7 +9,7 @@ cp -r templates/* tempdir/templates/.
 cp -r static/* tempdir/static/.
 
 #Tijdelijk een dockerfile aanmaken en in deze container python installeren en onze app draaien.
-echo "FROM python" >> tempdir/Dockerfile
+echo "FROM python" > tempdir/Dockerfile
 echo "RUN pip install flask" >> tempdir/Dockerfile
 #toevoegen nodige website onderdelen.
 echo "COPY ./static /home/myapp/static/" >> tempdir/Dockerfile
